@@ -1,0 +1,175 @@
+#fbs,
+#hubs,
+#loader,
+table {
+    display: none
+}
+
+h3,
+h4 {
+    padding: 0 1em;
+    line-height: 3em
+}
+
+h3,
+h4,
+h4 .glyphicon {
+    line-height: 3em
+}
+
+h4 {
+    border: 1px solid #ccc;
+    border-Left: none;
+    border-right: none;
+    text-transform: capitalize;
+    position: relative;
+    background: #eee;
+    margin: 0 0 -1px;
+    font-size: 18px
+}
+
+h4 .glyphicon {
+    position: absolute;
+    right: .5em;
+    transition: All .1s ease-out;
+    -webkit-transition: All .1s ease-out;
+    -moz-transition: All .1s ease-out;
+    -o-transition: All .1s ease-out
+}
+
+.btnExport {
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+h4.open .glyphicon {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg)
+}
+
+.glyphicon.spinning {
+    animation: spin 2s infinite linear;
+    -webkit-animation: spin2 2s infinite linear
+}
+
+@keyframes spin {
+    from {
+        transform: scale(1) rotate(0)
+    }
+    to {
+        transform: scale(1) rotate(360deg)
+    }
+}
+
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+#loader {
+    position: fixed;
+    font-size: 5em;
+    top: 50%;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+    z-index: 1000
+}
+
+.loading #loader,
+.loading #loading-overlay {
+    display: block
+}
+
+#loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    opacity: .7
+}
+
+.label,
+h3 {
+    position: relative
+}
+
+.navbar {
+    margin-bottom: 0
+}
+
+body {
+    padding-top: 0;
+    font-family: sans-serif
+}
+
+.navbar-brand,
+H1,
+h2,
+h3,
+h4 {
+    font-family: Montserrat, sans-serif
+}
+
+h3 {
+    text-transform: uppercase;
+    font-weight: 100;
+    background: #333;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 2em 0 0
+}
+
+.navbar-collapse.in {
+    overflow-y: visible
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: transparent
+}
+
+.label {
+    font-weight: 400;
+    top: -2px
+}
+.btn-primary {
+  background-color: #b5004d!important;
+  border-color: #b5004d!important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #9c0042!important;
+  border-color: #820037!important;
+}
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #b5004d;
+  border-color: #b5004d;
+}
